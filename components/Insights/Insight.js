@@ -1,18 +1,9 @@
 import React from "react";
 import { useWindowSize } from "react-use";
-import Image from "next/image";
 
 const insightData = [
   {
-    image: () => (
-      <Image
-        src="/insightJobSecurity.jpg"
-        width="311"
-        height="333"
-        alt="graduate"
-        layout="responsive"
-      />
-    ),
+    image: "/insightJobSecurity.png",
     header: "Job Hunting tips",
     text: `Dear Jobseeker,
 
@@ -37,15 +28,7 @@ const insightData = [
         Find this useful? Do your bit and share with a friend`,
   },
   {
-    image: () => (
-      <Image
-        src="/insightGraduateAdvice.jpg"
-        width="311"
-        height="200"
-        alt="graduate"
-        layout="responsive"
-      />
-    ),
+    image: "/insightGraduateAdvice.png",
     header: "Job Advice for New graduates",
     text: `Dear Young professionals and fresh graduates,
 
@@ -62,15 +45,7 @@ const insightData = [
         ◉Be prepared to defend your CV at the interview.`,
   },
   {
-    image: () => (
-      <Image
-        src="/insightDigital.jpg"
-        width="311"
-        height="333"
-        alt="graduate"
-        layout="responsive"
-      />
-    ),
+    image: "/insightDigitals.png",
     header: "Impact of Digital technology",
     text: `Digital technologies have risen to prominence as a critical determinant of economic growth, national security, and international competitiveness. It affects everything from resource allocation to income distribution and growth.
 
@@ -81,15 +56,7 @@ const insightData = [
         Technology keeps evolving, and so should you. Never stop developing yourself.`,
   },
   {
-    image: () => (
-      <Image
-        src="/insightSuccess.jpg"
-        width="311"
-        height="333"
-        alt="graduate"
-        layout="responsive"
-      />
-    ),
+    image: "/insightSuccesss.png",
     header: "Test of Success",
     text: `The true test of success comes when you run up against challenges or roadblocks in your path.
 
@@ -102,15 +69,7 @@ const insightData = [
         Stay Safe!`,
   },
   {
-    image: () => (
-      <Image
-        src="/insightWorkplace.jpg"
-        width="311"
-        height="333"
-        alt="graduate"
-        layout="responsive"
-      />
-    ),
+    image: "/insightWorkplace.png",
     header: "Changes in Workplace",
     text: `Companies are having to work differently during these times, with the health and wellbeing of colleagues and employees a high priority for many.
 
@@ -121,15 +80,7 @@ const insightData = [
         Source: Orion Group`,
   },
   {
-    image: () => (
-      <Image
-        src="/insightPatience.jpg"
-        width="311"
-        height="333"
-        alt="graduate"
-        layout="responsive"
-      />
-    ),
+    image: "/insightPatience.png",
     header: "Benefit of waiting",
     text: `Waiting is one of the prevalent parts of human psychology.
 
@@ -202,16 +153,7 @@ const Insight = () => {
         </div>
         <div className="insightpics-big">
           <div className="insight-pics-containers">
-            <Image
-              src="/desktopinsightpics.png"
-              width="733"
-              height="333"
-              alt="desktopinsightpics"
-            />
-            {/* <img
-              src="https://media-exp1.licdn.com/dms/image/C5622AQGjR_FcBkijgw/feedshare-shrink_1280/0?e=1597276800&v=beta&t=C-oDHctdVRUdPrKdGVwc712Oihe4MAqNp59NrJrG6b8"
-              alt="desktopinsightpics"
-            /> */}
+            <img src="/desktopinsightpics.png" alt="desktopinsightpics" />
             <p className="insightpics-header">Job Security</p>
             <p className="insightpics-text">
               Tips on Improving your job security post - COVID from a top Talent
@@ -246,7 +188,9 @@ const Insight = () => {
 
         {insightData.map((data, index) => (
           <div className="insight-pics-container" key={index}>
-            <div className="pics-insight">{data.image()}</div>
+            <div className="pics-insight">
+              <img src={data.image} alt="insightpics" />
+            </div>
             <p className="insightpics-header">{data.header}</p>
             <p className="insightpics-text">{data.text}</p>
           </div>
@@ -379,6 +323,7 @@ const Insight = () => {
             grid-row: 1 / 2;
             margin-left: 0rem;
             margin-right: 0rem;
+            margin-bottom: 2rem;
           }
           .insightpics-big {
             display: block;
@@ -411,6 +356,7 @@ const Insight = () => {
             grid-column: 1;
             grid-row: 2;
             height: 40%;
+            margin-top: 5rem;
           }
           .grid-section .insight-pics-container:nth-of-type(5) {
             grid-column: 2;
@@ -429,7 +375,7 @@ const Insight = () => {
             width: initial;
           }
           .grid-section .insight-pics-container:nth-of-type(4) {
-            margin-top: 5rem;
+            height: 50%;
           }
         }
       `}</style>

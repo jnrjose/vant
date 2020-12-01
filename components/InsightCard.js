@@ -4,7 +4,8 @@ import ActiveLink from "./ActiveLink";
 const InsightCard = ({ image }) => {
   return (
     <div className="insightcard-container card">
-      <div className="insightcard-image">{image.imageUrl()}</div>
+      <img src={image.imageUrl} alt="card" className="insightcard-image" />
+
       <div className="insightcard-details-wrapper">
         <h5 className="insightcard-details-header">{image.title}</h5>
         {/*<p className="insightcard-details-date">May 20, 2020</p>*/}
@@ -28,7 +29,6 @@ const InsightCard = ({ image }) => {
           object-fit: cover;
           max-width: 100%;
           max-height: 100%;
-          width: 100%;
           display: block;
         }
         .insightcard-details-wrapper {
@@ -73,12 +73,11 @@ const InsightCard = ({ image }) => {
             margin-bottom: 1.2rem;
           }
           .insightcard-image {
-            width: 234px;
+            width: 40%;
           }
           .insightcard-details-wrapper {
             height: 100%;
             padding: 3.3rem 3rem 4rem 4rem;
-            width: 70%;
           }
         }
       `}</style>

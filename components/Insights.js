@@ -5,15 +5,7 @@ import InsightHero from "./InsightHero";
 
 const insightContent = [
   {
-    imageUrl: () => (
-      <Image
-        src="/insightJobHunt.jpg"
-        alt="job_hunt"
-        width="234"
-        height="186"
-        layout="responsive"
-      />
-    ),
+    imageUrl: "/insightJobHunt.png",
     message: `Dear Jobseeker,
     Here's our today's top tip.
     When it comes to job hunting, your CV is paramount that even the smallest details count. Get it right, and you’ll have an interview in no time, but get it wrong, and you may face rejection after rejection.
@@ -22,45 +14,21 @@ const insightContent = [
     link: "/insight",
   },
   {
-    imageUrl: () => (
-      <Image
-        src="/insightGraduate.jpg"
-        alt="job_hunt"
-        width="234"
-        height="186"
-        layout="responsive"
-      />
-    ),
+    imageUrl: "/insightGraduate.png",
     message: `Dear Young professionals and fresh graduates,
     Being a new graduate can be exciting, as one chapter of life is closing and another is just beginning. in many ways finding post-grad work is a job in itself`,
     title: "Job Advice for New graduates",
     link: "/insight",
   },
   {
-    imageUrl: () => (
-      <Image
-        src="/insightDigital.jpg"
-        alt="job_hunt"
-        width="234"
-        height="186"
-        layout="responsive"
-      />
-    ),
+    imageUrl: "/insightDigital.png",
     message:
       "Digital technologies have risen to prominence as a critical determinant of economic growth, national security, and international competitiveness.",
     title: "Impact of Digital technology",
     link: "/insight",
   },
   {
-    imageUrl: () => (
-      <Image
-        src="/insightSuccess.jpg"
-        alt="job_hunt"
-        width="234"
-        height="186"
-        layout="responsive"
-      />
-    ),
+    imageUrl: "/insightSuccess.png",
     message:
       "The true test of success comes when you run up against challenges or roadblocks in your path.",
     title: "Motivation for the week",
